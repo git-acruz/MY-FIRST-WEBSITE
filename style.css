@@ -2,6 +2,8 @@
     height: 300px;
     width: 300px;
     margin-top: 5px;
+    display: block;
+    margin: auto;
 }
 body {
     /* background: rgb(rgb(119, 216, 207)); */
@@ -17,24 +19,51 @@ body {
     font-weight: bold;
 }
 .mymail {
-    margin-left: 30px;
+    display: flex;
+    justify-content: center;
 }
-h1, h2 {
+h1, h2, h3 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
     color: navy;
+    text-align: center;
 }
 .short-details {
     font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
-    text-indent: 30px;
-
+    text-align: center;
 }
-h3 {
+h4 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
+    text-align: center;
 
 }
-#anchor {
+.skill-details {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
     text-align: center;
+}
+.skill-details ul {
+    display: inline-block;
+    /* list-style-type: none; (this removes the bullet-style list*/
+    padding: 0; /* indention of bullets */
+}
+
+form {
+    margin-left: 30px;
+}
+.name-label, .age-label, .contact-label, .gender-label {
+    display: inline-block;
+    width: 80px; /* Adjust the width as needed */
+    text-align: left;
+}
+
+textarea {
+    resize: none;
+}
+
+.to-top {
+    text-align: center;
+    font-size: 20px;
 }
